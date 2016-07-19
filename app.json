@@ -1,0 +1,23 @@
+{
+  "name": "Privus",
+  "description": "A private npm registry for GitHub repositories",
+  "website": "https://github.com/eymengunay/node-privus",
+  "repository": "https://github.com/eymengunay/node-privus",
+  "logo": "https://raw.githubusercontent.com/npm/logos/master/npm%20square/n-large.png",
+  "keywords": ["npm", "registry", "privus", "github"],
+  "env": {
+    "SECRET": {
+      "description": "Secret token needed to access registry.",
+      "generator": "secret"
+    },
+    "GITHUB_TOKEN": {
+      "description": "GitHub API access token. See: https://help.github.com/articles/creating-an-access-token-for-command-line-use/",
+      "required": true
+    },
+    "SCOPE": {
+      "description": "If set only packages with given scope will be accepted to the registry",
+      "required": false
+    }
+  },
+  "success_url": "/"
+}
